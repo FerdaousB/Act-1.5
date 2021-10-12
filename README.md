@@ -11,7 +11,8 @@ Utiliser mes classes :
 
 Maintenant que vous disposez des différentes classes pour décrire un bateau (créées plus haut), vous allez écrire un programme qui les utilise, dans un Main. Un bateau est constitué d'une Coque, d'un Pont, d'une Cabine et le Pont est composé d'un Mat qui lui-même est composé d'une Voile. Créez les liens entre ces classes, mettez en place les constructeurs, les getters et les setters de chaque attribut. Implémentez également la méthode toString() de chaque classe. L'affichage d'un Bateau doit afficher:
 
-System.out.println(monBateau); //La méthode .toString est automatiquement appellée si elle est créée.
+
+
 ------- Sortie Console --------
 >Le bateau n°1 est constitué de:
 La coque n°2;
