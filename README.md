@@ -1,5 +1,5 @@
-# Act-1.5
- # Projet de Java  
+# POO Et Héritage 
+ # Mini projet en Java  
 
 # Structure d'un bateau : 
 
