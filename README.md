@@ -1,7 +1,7 @@
 # Act-1.5
-Projet de Java - 
+ # Projet de Java  
 
-Structure d'un bateau : 
+# Structure d'un bateau : 
 
 Vous gagnez en grade petit à petit et aujourd'hui, il vous est demandé de décrire les principales parties d'un bateau. 
 Votre travail consiste à créer les classes suivantes : Bateau, Coque, Pont, Cabine, Mat et pour chacune des classes vous devrez trouver au moins 2 attributs, 
