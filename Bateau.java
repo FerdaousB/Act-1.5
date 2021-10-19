@@ -2,7 +2,7 @@ package bateau;
 
 public class Bateau {
 
-	
+	public static int next_id = 0; // un membre de classe statique pour garder une trace du dernier index utilisé.
 	private int id;
 	private String marque;
 	private int size;
@@ -11,15 +11,14 @@ public class Bateau {
 	
 	
 	
-	public Bateau(int id) {
+	public Bateau() {
 		super();
-		this.id = id;
 	}
 
 
 	public Bateau(int id, String marque, int size, String nom, String direction) {
 		super();
-		this.id = id;
+		this.id = ++Bateau.next_id;
 		this.marque = marque;
 		this.size = size;
 		this.nom = nom;
@@ -70,7 +69,7 @@ public class Bateau {
 
 	@Override
 	public String toString() {
-		return "Le Bateau N° "+id;
+		return "Le Bateau N° "+ ++Bateau.next_id; 
 	}
 
 	

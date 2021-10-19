@@ -9,9 +9,8 @@ public class Mat {
     
     
     
-	public Mat(int id) {
+	public Mat() {
 		super();
-		this.id = id;
 	}
 	public Mat(String matiere, float longeur) {
 		super();
@@ -40,7 +39,7 @@ public class Mat {
    
 	 @Override
 		public String toString() {
-			return "Mat N°"+id;
+			return "Mat N°"+ ++Bateau.next_id;
 		}
 	
 	

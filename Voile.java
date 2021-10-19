@@ -2,7 +2,6 @@ package bateau;
 
 public class Voile {
 	private int id;
-
 	private int hauteurMax;
 	private int hauteurMin;
     private  String size;
@@ -14,15 +13,10 @@ public class Voile {
     private boolean deroule = false ;
 
     
-	public Voile(int id) {
+	public Voile() {
 		super();
-		this.id = id;
 	}
 
-
-	
-	
-	
 
 	public Voile(int id, int hauteurMax, int hauteurMin, String size, String marque, String direction, int hauteur) {
 		super();
@@ -171,7 +165,7 @@ public class Voile {
 
 	@Override
 	public String toString() {
-		return "Voile N°" + id ;
+		return "Voile N°" + ++Bateau.next_id ;
 	}
 
 

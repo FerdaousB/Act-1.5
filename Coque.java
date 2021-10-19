@@ -1,7 +1,8 @@
 package bateau;
 
 public class Coque {
-	    
+	
+
 	    private int id;
 	    private float longueur;
 	    private  float largeur;
@@ -11,15 +12,14 @@ public class Coque {
 	   
 
 
-		public Coque(int id) {
+		public Coque() {
 			super();
-			this.id = id;
 		}
 
 
-		public Coque(float longueur, float largeur, String couleur) {
+		public Coque(int id, float longueur, float largeur, String couleur) {
 			super();
-			
+			this.id =id;
 			this.longueur = longueur;
 			this.largeur = largeur;
 			this.couleur = couleur;
@@ -28,10 +28,10 @@ public class Coque {
 
 		public int getId() {
 			return id;
-		}
+	   }
 
 
-		public void setId(int id) {
+	    public void setId(int id) {
 			this.id = id;
 		}
 
@@ -64,10 +64,14 @@ public class Coque {
 		public void setCouleur(String couleur) {
 			this.couleur = couleur;
 		}
+		
+		
+	
 
 		 @Override
 			public String toString() {
-				return "La Coque N°" + id;
+			      id =++Bateau.next_id;
+				return "La Coque N°" + ++Bateau.next_id; // un nouvel objet est créé, la valeur de id augmente
 			}
 
 }

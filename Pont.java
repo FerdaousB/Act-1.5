@@ -6,9 +6,8 @@ public class Pont {
     private  String matiere;
     private String couleur;
    
-	public Pont(int id) {
+	public Pont() {
 		super();
-		this.id = id;
 	}
 
 	public Pont(String matiere, String couleur) {
@@ -44,7 +43,7 @@ public class Pont {
 
 	@Override
 	public String toString() {
-		return "Le Pont N°" +id;
+		return "Le Pont N°" + ++Bateau.next_id;
 	}
 
 	

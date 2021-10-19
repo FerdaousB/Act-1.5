@@ -7,9 +7,8 @@ public class Cabine {
     private  float largeur;
     private float hauteur;
    
-	public Cabine(int id) {
+	public Cabine() {
 		super();
-		this.id = id;
 	}
 
 	public Cabine(String type, float largeur, float hauteur) {
@@ -54,7 +53,12 @@ public class Cabine {
 
 	@Override
 	public String toString() {
-		return "La Cabine N°" + id;
+		
+		// synchronized {
+	     //       id = id + 1;
+	 
+	//	 }
+		 return "La Cabine N°" + ++Bateau.next_id;
 	}
     
 	
